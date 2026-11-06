@@ -29,8 +29,8 @@ The app uses browser-native APIs and does not require a bundler or package insta
 
 ## Content Fidelity
 
-The slide wording, sequence, examples, and teaching framing are carried over from the supplied HTML source. The repository packaging separates presentation files but does not intentionally rewrite the educational content.
+The slide sequence and visual teaching approach are retained, while selected explanations have been refined for modern TLS terminology and protocol accuracy. In particular, public-key signatures are distinguished from key agreement; a plain hash is distinguished from authenticated integrity; and HTTP/3 over QUIC is distinguished from HTTPS over TCP.
 
 ## Important Limitations
 
-Some interactions are intentionally illustrative. The simulated signature check, record transfer, and handshake animation do not constitute real cryptographic signing, AES encryption, or a live TLS session. The toy RSA and Diffie–Hellman parameter values are too small for security. Refer to the README for the per-demo distinctions.
+Some interactions are intentionally illustrative. The simulated signature check, record transfer, and handshake animation do not constitute real cryptographic signing, AEAD encryption, or a live TLS session. The SHA-256 slide is a real browser-computed digest when Web Crypto is available. The toy RSA and Diffie–Hellman parameter values are too small for security. Refer to the README for the per-demo distinctions.

@@ -19,7 +19,7 @@ An interactive 18-slide presentation explaining how SSL/TLS helps two endpoints 
 
 **The Secret Handshake** is a browser-based teaching presentation for the SSL/TLS topic in Computer Networks. It introduces the security problem with plain HTTP, explains the cryptographic building blocks used by TLS, walks through certificates and trust, demonstrates the TLS 1.3 handshake, and connects the ideas to real-world protocols and attacks.
 
-The original presentation was supplied as a single HTML file. This repository version keeps the presentation content and JavaScript behavior intact while separating the embedded stylesheet and script into dedicated files for easier maintenance.
+The original presentation was supplied as a single HTML file. This repository version keeps the 18-slide sequence and visual identity while separating the stylesheet and script for easier maintenance. The updated edition also refines technical explanations, improves selected slide layouts, and makes slide navigation more accessible.
 
 ## Highlights
 
@@ -28,7 +28,9 @@ The original presentation was supplied as a single HTML file. This repository ve
 - **Cryptography learning demos** for a Caesar shift, small RSA example, Diffie–Hellman shared-secret calculation, and SHA-256 fingerprint changes.
 - **Certificate and trust interactions** for exploring certificate fields, a CA trust chain, and a tampered-message concept.
 - **TLS demonstrations** for the TLS 1.3 handshake, TLS 1.2 vs 1.3, record transfer concept, and man-in-the-middle scenarios.
-- Responsive layout, progress indicator, slide rail, keyboard controls, touch navigation, and fullscreen mode.
+- Responsive layout, progress indicator, accessible slide rail, keyboard controls, touch navigation, and fullscreen mode.
+- Slide 6 plays its three-stage explanation once on first entry and includes a Replay animation button.
+- Slide 18 arranges its six summary cards in a balanced 3 × 2 desktop grid, with responsive layouts for smaller screens.
 - No framework, package manager, or build step is required.
 
 ## Presentation Structure
@@ -71,7 +73,7 @@ Or open the project folder in VS Code and use the Live Server extension.
 | Input | Action |
 |:--|:--|
 | `→`, `↓`, `Space`, `PageDown` | Next slide |
-| `←`, `↑`, `PageUp` | Previous slide |
+| `←`, `↑`, `PageUp` | Previous slide (when focus is not in a control) |
 | `F` | Toggle fullscreen |
 | Mouse wheel | Move between slides |
 | Touch swipe | Move between slides on touch devices |
@@ -105,6 +107,8 @@ This is an **educational presentation**, not a production TLS implementation or 
 - The signature tampering control is a visual teaching simulation; it does not create or verify a real digital signature.
 - The record-transfer animation is a visual simulation; it does not encrypt application data with AES or establish a real TLS connection.
 - The handshake sequence is an explanatory animation. It does not perform a network handshake with a server.
+- The Caesar cipher is deliberately insecure and only illustrates a shared-key idea.
+- The digital-signature, trust-chain, record-transfer, and handshake interactions are visual teaching simulations, not real signing, certificate validation, AEAD encryption, or a live TLS session.
 
 These boundaries are documented so the visual demonstrations are not mistaken for live cryptographic operations.
 
@@ -150,7 +154,7 @@ The presentation source lists the following group members:
 
 ## License
 
-No license file is included because the contributors' preferred reuse terms have not been specified. Agree on a license as a team before adding one or publishing the repository for reuse.
+This repository includes an MIT License in `LICENSE`. Review the license and retain its copyright and permission notice when redistributing the project.
 
 ---
 

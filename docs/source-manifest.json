@@ -1,11 +1,11 @@
 {
-  "project": "The Secret Handshake \u2014 SSL/TLS Computer Networks",
+  "project": "The Secret Handshake — SSL/TLS Computer Networks",
   "slides": 18,
-  "source_file": "The Secret Handshake \u2013 SSL_TLS(1).html",
+  "source_file": "The Secret Handshake – SSL_TLS(1).html",
   "source_sha256": "57803231cecd24ff86c76ae4d5ea3e35dd27681bdb71712611485b7d8f8d73d0",
   "files": {
     "index.html": "8b3bdf075748a457eb11f43393f7f62cc90868e9be8ed205884fdba33133ecec",
-    "assets/css/styles.css": "23e509e59fc0306785f3e210a9ac8ea9a928dd57c70e59a8943510ab4cbcb87f",
-    "assets/js/app.js": "bd8d7bd68839822a921246e097cfe778fd8aa31772cb60c5712782ae4834760f"
+    "assets/css/styles.css": "5738de641657b3421fda40a4264b540fa07eeca39f365a545cbbadbcebc78abf",
+    "assets/js/app.js": "c821f8a9bb0a9f814b4f70f26514335c5689d0fba2679812d520c8d47f8df101"
   }
 }

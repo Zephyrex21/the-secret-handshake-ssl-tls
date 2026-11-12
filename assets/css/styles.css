@@ -163,3 +163,13 @@ button{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em}.mono,code{
 @media(prefers-reduced-motion:reduce){
   #s5.play-steps .step{animation:none;opacity:1;border-color:var(--grn)}
 }
+
+/* v3 readability + handshake layout */
+.card small,.note{font-size:15px}.info ul{font-size:16px;line-height:1.5}.info h4{font-size:13px}
+.hsgrid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:24px;align-items:start}
+@media(max-width:900px){.hsgrid{grid-template-columns:1fr}}
+.hs{gap:9px}.hs .r{grid-template-columns:72px minmax(0,1fr) 72px}
+.hs .ln{height:54px;font-size:16px;padding-top:4px}.hs .ln small{font-size:13px}
+.hs .pt{font-size:14px;padding:12px 2px}
+.scene svg #cap{font-size:17px}.scene svg text{font-size:15px}
+.hsl .info{margin-top:12px}
